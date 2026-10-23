@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>IMPERIUM — Eventi da Favola | Location per Matrimoni ed Eventi a Teverola (CE)</title>
+<meta name="description" content="Dal 1992 IMPERIUM è la location da favola per matrimoni, cerimonie ed eventi a Teverola (CE). Quattro sale eleganti e un'area esterna. Richiedi un preventivo veloce su WhatsApp." />
+<meta name="theme-color" content="#0E0E10" />
+<link rel="canonical" href="https://imperiumeventidafavola.it/" />
+
+<!-- Open Graph / condivisione WhatsApp & Instagram -->
+<meta property="og:type" content="business.business" />
+<meta property="og:title" content="IMPERIUM — Eventi da Favola" />
+<meta property="og:description" content="Dal 1992 la location perfetta per i tuoi eventi da favola. Matrimoni, cerimonie ed eventi a Teverola (CE)." />
+<meta property="og:image" content="assets/img/poster-sfondo.jpg" />
+<meta property="og:locale" content="it_IT" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="assets/logo/favicon.png" />
+<link rel="apple-touch-icon" href="assets/logo/favicon.png" />
+
+<!-- Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ===================== HEADER / NAV ===================== -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#hero" class="nav__brand" aria-label="IMPERIUM — home">
+      <img src="assets/logo/imperium-logo-light-800.png" alt="IMPERIUM Eventi da Favola" class="nav__logo" width="160" height="63" />
+    </a>
+    <nav class="nav__links" aria-label="Navigazione principale">
+      <a href="#sale">Le Sale</a>
+      <a href="#esterno">Solarium</a>
+      <a href="#location">Location</a>
+      <a href="#preventivo">Preventivo</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
+    <a href="#preventivo" class="btn btn--gold nav__cta">Preventivo veloce</a>
+    <button class="nav__burger" id="burger" aria-label="Apri menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="hero">
+  <video class="hero__video" id="heroVideo" autoplay muted loop playsinline preload="auto" poster="assets/img/poster-sfondo.jpg">
+    <source src="assets/video/sfondo.mp4" type="video/mp4" />
+  </video>
+  <div class="hero__scrim"></div>
+
+  <div class="hero__content">
+    <span class="hero__eyebrow" id="statoBadge">Caricamento…</span>
+    <img src="assets/logo/imperium-logo-light-800.png" alt="IMPERIUM Eventi da Favola" class="hero__logo" width="520" height="204" />
+    <p class="hero__tag" id="heroTag">Dal 1992 la location perfetta per i tuoi eventi da favola.</p>
+    <div class="hero__words">Lusso · Eleganza · Grandezza</div>
+    <div class="hero__cta">
+      <a href="#preventivo" class="btn btn--gold">Preventivo veloce</a>
+      <a href="#sale" class="btn btn--ghost">Scopri le sale</a>
+    </div>
+  </div>
+
+  <a href="#intro" class="hero__scroll" aria-label="Scorri">
+    <span></span>
+  </a>
+</section>
+
+<!-- ===================== INTRO / CLAIM ===================== -->
+<section class="intro" id="intro">
+  <div class="wrap intro__grid">
+    <div class="intro__text">
+      <p class="kicker">Benvenuti</p>
+      <h2 class="h-serif">Un impero di eleganza <br />al servizio del tuo evento</h2>
+      <p>Da oltre trent'anni IMPERIUM accoglie i momenti più importanti della vita: matrimoni, cerimonie e grandi feste. Sale raffinate, un esclusivo Solarium all'aperto e il Club Imperium, un servizio curato in ogni dettaglio e la potenza di una location che si presenta come un vero palazzo imperiale.</p>
+      <p>Qui ogni evento diventa <em>da favola</em>.</p>
+      <a href="#sale" class="link-gold">Scopri i nostri spazi &rarr;</a>
+    </div>
+    <ul class="intro__numeri" id="numeri"><!-- JS --></ul>
+  </div>
+</section>
+
+<!-- ===================== LE SALE ===================== -->
+<section class="sale" id="sale">
+  <div class="wrap section-head">
+    <p class="kicker">Gli Ambienti</p>
+    <h2 class="h-serif">Le Sale e gli Spazi</h2>
+    <p class="section-sub">Ognuno con il suo carattere. Tutti con la stessa grandezza. I video partono da soli allo scorrimento.</p>
+  </div>
+  <div class="wrap sale__grid" id="saleGrid"><!-- JS --></div>
+</section>
+
+<!-- ===================== ESTERNO (video con audio) ===================== -->
+<section class="esterno" id="esterno">
+  <div class="wrap section-head section-head--light">
+    <p class="kicker">All'aperto</p>
+    <h2 class="h-serif" id="esternoTitolo">L'Area Esterna</h2>
+    <p class="section-sub" id="esternoDesc"></p>
+  </div>
+  <div class="wrap esterno__stage">
+    <div class="esterno__frame">
+      <video id="esternoVideo" loop playsinline preload="none" poster="assets/img/poster-esterno.jpg">
+        <source id="esternoSrc" src="" type="video/mp4" />
+      </video>
+      <button class="esterno__audio" id="esternoAudio" aria-label="Attiva audio">
+        <svg id="iconMuted" viewBox="0 0 24 24" width="22" height="22"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4z" fill="currentColor" opacity=".9"/><line x1="2" y1="2" x2="22" y2="22" stroke="currentColor" stroke-width="2"/></svg>
+        <svg id="iconSound" viewBox="0 0 24 24" width="22" height="22" hidden><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z" fill="currentColor"/></svg>
+      </button>
+      <span class="esterno__hint" id="esternoHint">Tocca per attivare l'audio</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== LA LOCATION / GALLERY ===================== -->
+<section class="location" id="location">
+  <div class="wrap section-head">
+    <p class="kicker">La Location</p>
+    <h2 class="h-serif">Un palazzo che si illumina al calar del sole</h2>
+    <p class="section-sub">Dalla facciata neoclassica agli interni scenografici: lasciati guidare tra gli spazi di IMPERIUM.</p>
+  </div>
+  <div class="wrap location__grid" id="locationGrid"><!-- JS --></div>
+</section>
+
+<!-- ===================== PREVENTIVO VELOCE ===================== -->
+<section class="preventivo" id="preventivo">
+  <div class="wrap preventivo__inner">
+    <div class="preventivo__intro">
+      <p class="kicker">In 1 minuto</p>
+      <h2 class="h-serif">Preventivo Veloce</h2>
+      <p class="section-sub">Inserisci i dettagli del tuo evento: prepariamo il messaggio e ti portiamo direttamente su WhatsApp con tutte le info già compilate.</p>
+      <ul class="preventivo__perks">
+        <li>Risposta rapida e personalizzata</li>
+        <li>Nessun impegno</li>
+        <li>Direttamente in chat con noi</li>
+      </ul>
+    </div>
+
+    <form class="form card-dark" id="formPreventivo" novalidate>
+      <div class="field">
+        <label for="pv-evento">Tipo di evento *</label>
+        <select id="pv-evento" name="evento" required></select>
+        <small class="err" data-for="pv-evento"></small>
+      </div>
+      <div class="row">
+        <div class="field">
+          <label for="pv-invitati">N° invitati *</label>
+          <input type="number" id="pv-invitati" name="invitati" min="1" max="2000" inputmode="numeric" placeholder="es. 120" required />
+          <small class="err" data-for="pv-invitati"></small>
+        </div>
+        <div class="field">
+          <label for="pv-data">Data (indicativa)</label>
+          <input type="date" id="pv-data" name="data" />
+          <small class="err" data-for="pv-data"></small>
+        </div>
+      </div>
+      <div class="row">
+        <div class="field">
+          <label for="pv-nome">Nome e cognome *</label>
+          <input type="text" id="pv-nome" name="nome" autocomplete="name" placeholder="Il tuo nome" required />
+          <small class="err" data-for="pv-nome"></small>
+        </div>
+        <div class="field">
+          <label for="pv-tel">Cellulare *</label>
+          <input type="tel" id="pv-tel" name="tel" autocomplete="tel" inputmode="tel" placeholder="Es. 333 1234567" required />
+          <small class="err" data-for="pv-tel"></small>
+        </div>
+      </div>
+      <div class="field">
+        <label for="pv-note">Note (facoltative)</label>
+        <textarea id="pv-note" name="note" rows="2" placeholder="Allestimento, orario, richieste particolari…"></textarea>
+      </div>
+      <button type="submit" class="btn btn--gold btn--block">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M.06 24l1.69-6.16a11.87 11.87 0 1 1 4.3 4.25zM6.6 20l.37.22a9.86 9.86 0 1 0-3.33-3.3l.24.38-.99 3.63z"/><path fill="currentColor" d="M9.5 7.1c-.2-.47-.42-.48-.62-.49h-.53c-.18 0-.48.07-.73.35s-.96.94-.96 2.3.98 2.66 1.12 2.85 1.93 3.1 4.78 4.22c2.37.94 2.85.75 3.37.7.52-.05 1.67-.68 1.9-1.34.24-.66.24-1.22.17-1.34-.07-.12-.26-.19-.54-.33s-1.67-.83-1.93-.92c-.26-.1-.45-.14-.64.14s-.73.92-.9 1.11c-.16.19-.33.21-.61.07a7.8 7.8 0 0 1-2.3-1.42 8.6 8.6 0 0 1-1.6-1.98c-.17-.28 0-.44.12-.58.13-.13.28-.33.42-.5.14-.16.19-.28.28-.47.1-.19.05-.35-.02-.49s-.63-1.55-.86-2.11z"/></svg>
+        Invia su WhatsApp
+      </button>
+      <p class="form__note" id="pvEsito" role="status"></p>
+    </form>
+  </div>
+</section>
+
+<!-- ===================== CONTATTI ===================== -->
+<section class="contatti" id="contatti">
+  <div class="wrap section-head">
+    <p class="kicker">Dove siamo</p>
+    <h2 class="h-serif">Contatti &amp; Orari</h2>
+  </div>
+  <div class="wrap contatti__grid">
+    <div class="contatti__info">
+      <div class="info-block">
+        <h3>Indirizzo</h3>
+        <p id="ctIndirizzo"></p>
+        <a href="#" id="ctMapLink" class="link-gold" target="_blank" rel="noopener">Apri in Google Maps &rarr;</a>
+      </div>
+      <div class="info-block">
+        <h3>Telefono</h3>
+        <p><a href="#" id="ctFisso"></a><br /><a href="#" id="ctCell"></a></p>
+      </div>
+      <div class="info-block">
+        <h3>Orari <span class="stato" id="statoContatti"></span></h3>
+        <ul class="orari" id="orariList"></ul>
+      </div>
+      <div class="info-block">
+        <h3>Seguici</h3>
+        <div class="socials" id="socials"></div>
+      </div>
+    </div>
+    <div class="contatti__map">
+      <iframe id="mapFrame" title="Mappa IMPERIUM Eventi da Favola" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <img src="assets/logo/imperium-logo-light-800.png" alt="IMPERIUM Eventi da Favola" class="footer__logo" width="200" height="78" />
+    <nav class="footer__links">
+      <a href="#sale">Le Sale</a>
+      <a href="#esterno">Solarium</a>
+      <a href="#location">Location</a>
+      <a href="#preventivo">Preventivo</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
+    <p class="footer__meta" id="footMeta"></p>
+    <p class="footer__credit">&copy; <span id="year"></span> IMPERIUM Eventi da Favola · Teverola (CE)</p>
+  </div>
+</footer>
+
+<!-- ===================== STICKY BAR MOBILE ===================== -->
+<nav class="dock" aria-label="Azioni rapide">
+  <a href="#" id="dockCall" class="dock__btn">
+    <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.2.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1z"/></svg>
+    <span>Chiama</span>
+  </a>
+  <a href="#" id="dockWhats" class="dock__btn" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M.06 24l1.69-6.16a11.87 11.87 0 1 1 4.3 4.25zM6.6 20l.37.22a9.86 9.86 0 1 0-3.33-3.3l.24.38-.99 3.63z"/><path fill="currentColor" d="M9.5 7.1c-.2-.47-.42-.48-.62-.49h-.53c-.18 0-.48.07-.73.35s-.96.94-.96 2.3.98 2.66 1.12 2.85 1.93 3.1 4.78 4.22c2.37.94 2.85.75 3.37.7.52-.05 1.67-.68 1.9-1.34.24-.66.24-1.22.17-1.34-.07-.12-.26-.19-.54-.33s-1.67-.83-1.93-.92c-.26-.1-.45-.14-.64.14s-.73.92-.9 1.11c-.16.19-.33.21-.61.07a7.8 7.8 0 0 1-2.3-1.42 8.6 8.6 0 0 1-1.6-1.98c-.17-.28 0-.44.12-.58.13-.13.28-.33.42-.5.14-.16.19-.28.28-.47.1-.19.05-.35-.02-.49s-.63-1.55-.86-2.11z"/></svg>
+    <span>WhatsApp</span>
+  </a>
+  <a href="#preventivo" class="dock__btn dock__btn--gold">
+    <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M3 5h18v2H3zm0 6h18v2H3zm0 6h12v2H3z"/></svg>
+    <span>Preventivo</span>
+  </a>
+</nav>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
