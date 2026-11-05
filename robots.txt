@@ -1,0 +1,5 @@
+# robots.txt — IMPERIUM Eventi da Favola
+User-agent: *
+Allow: /
+
+Sitemap: https://imperiumeventidafavola.com/sitemap.xml
